@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": false,
+    "layout": {
+      "contentSize": "48rem",
+      "wideSize": "64rem"
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "units": ["px", "em", "rem", "vh", "vw"]
+    },
+    "typography": {
+      "fluid": true,
+      "dropCap": false
+    }
+  }
+}

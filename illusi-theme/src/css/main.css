@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Fix layout shifts for img */
+  img {
+    @apply h-auto max-w-full;
+  }
+  
+  /* Fix sticky header when standard WP admin bar is present */
+  .admin-bar header.sticky {
+    top: 32px;
+  }
+  @media screen and (max-width: 782px) {
+    .admin-bar header.sticky {
+      top: 46px;
+    }
+  }
+}
+
+/* View Transitions API (SPA Feel) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.25s;
+}

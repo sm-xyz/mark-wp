@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Gutenberg Editor Specific Overrides */
+  body .editor-styles-wrapper {
+    @apply font-sans text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-900;
+  }
+  
+  /* Applying Tailwind Typography (Prose) automatically to the editor so it matches the frontend */
+  .editor-styles-wrapper .block-editor-block-list__layout {
+    @apply prose prose-slate dark:prose-invert max-w-none prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-headings:font-bold;
+  }
+}
